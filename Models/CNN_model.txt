@@ -1,0 +1,60 @@
+Model: "sequential_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ embedding_1 (Embedding)     (None, 1014, 70)          4970      
+                                                                 
+ conv1d_6 (Conv1D)           (None, 1008, 256)         125696    
+                                                                 
+ activation_6 (Activation)   (None, 1008, 256)         0         
+                                                                 
+ max_pooling1d_3 (MaxPooling  (None, 336, 256)         0         
+ 1D)                                                             
+                                                                 
+ conv1d_7 (Conv1D)           (None, 330, 256)          459008    
+                                                                 
+ activation_7 (Activation)   (None, 330, 256)          0         
+                                                                 
+ max_pooling1d_4 (MaxPooling  (None, 110, 256)         0         
+ 1D)                                                             
+                                                                 
+ conv1d_8 (Conv1D)           (None, 108, 256)          196864    
+                                                                 
+ activation_8 (Activation)   (None, 108, 256)          0         
+                                                                 
+ conv1d_9 (Conv1D)           (None, 106, 256)          196864    
+                                                                 
+ activation_9 (Activation)   (None, 106, 256)          0         
+                                                                 
+ conv1d_10 (Conv1D)          (None, 104, 256)          196864    
+                                                                 
+ activation_10 (Activation)  (None, 104, 256)          0         
+                                                                 
+ conv1d_11 (Conv1D)          (None, 102, 256)          196864    
+                                                                 
+ activation_11 (Activation)  (None, 102, 256)          0         
+                                                                 
+ max_pooling1d_5 (MaxPooling  (None, 34, 256)          0         
+ 1D)                                                             
+                                                                 
+ flatten_1 (Flatten)         (None, 8704)              0         
+                                                                 
+ dense_4 (Dense)             (None, 1024)              8913920   
+                                                                 
+ dropout_3 (Dropout)         (None, 1024)              0         
+                                                                 
+ dense_5 (Dense)             (None, 256)               262400    
+                                                                 
+ dropout_4 (Dropout)         (None, 256)               0         
+                                                                 
+ dense_6 (Dense)             (None, 64)                16448     
+                                                                 
+ dropout_5 (Dropout)         (None, 64)                0         
+                                                                 
+ dense_7 (Dense)             (None, 4)                 260       
+                                                                 
+=================================================================
+Total params: 10,570,158
+Trainable params: 10,570,158
+Non-trainable params: 0
+_________________________________________________________________
